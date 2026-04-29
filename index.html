@@ -4,170 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tony's Digital Solutions</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0a0a0a;
-      color: white;
-    }
-
-    header {
-      background: black;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      color: red;
-      margin: 0;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-      url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
-      background-size: cover;
-      color: white;
-    }
-
-    .box {
-      border: 1px solid #333;
-      margin: 10px auto;
-      padding: 20px;
-      max-width: 400px;
-      border-radius: 10px;
-      background: #111;
-    }
-
-    .inventory {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .car-card {
-      width: 250px;
-      background: #111;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .car-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    button {
-      padding: 12px 20px;
-      background: red;
-      border: none;
-      color: white;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-
-    footer {
-      background: black;
-      padding: 20px;
-      text-align: center;
-      color: #aaa;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
   <h1>Tony's Digital Solutions</h1>
+
   <nav>
-    <a href="#services">Services</a>
-    <a href="#demo">Demo</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
+    <div class="dropdown">
+      <button class="nav-btn">Demo ▼</button>
+      <div class="dropdown-content">
+        <a href="demos.html">View Demos</a>
+      </div>
+    </div>
+
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Websites That Help Businesses Get More Customers</h2>
-  <p>Clean, professional, mobile-friendly websites built to convert.</p>
-  <button>Get Started</button>
-</section>
-
-<section id="services">
-  <h2>Services</h2>
-
-  <div class="box">✔ Professional Website Design</div>
-  <div class="box">✔ Mobile Optimization</div>
-  <div class="box">✔ Contact & Lead Setup</div>
-  <div class="box">✔ Website Maintenance</div>
-</section>
-
-<section id="demo">
-  <h2>Dealership Demo</h2>
-
-  <div class="inventory">
-    <div class="car-card">
-      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
-      <h3>Ford F-150</h3>
-      <p>Low miles • Clean title</p>
-    </div>
-
-    <div class="car-card">
-      <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341">
-      <h3>Toyota Camry</h3>
-      <p>Fuel efficient • Great condition</p>
-    </div>
-
-    <div class="car-card">
-      <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
-      <h3>Chevy Silverado</h3>
-      <p>Work ready • Financing available</p>
-    </div>
+  <div class="hero-content">
+    <h2>We Build Websites That Bring You More Customers</h2>
+    <p>Clean, mobile-friendly websites designed to grow your business.</p>
   </div>
 </section>
 
-<section id="pricing">
-  <h2>Pricing</h2>
-
-  <div class="box">
-    <h3>Website Build</h3>
-    <p>$400 – $700</p>
-  </div>
-
-  <div class="box">
-    <h3>Maintenance</h3>
-    <p>$75 – $150/month</p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>📞 775-462-8615</p>
-  <p>📧 Tonysdigitalsolutions2026@gmail.com</p>
-  <button>Call Now</button>
-</section>
-
-<footer>
-  <p>Serving Businesses Nationwide</p>
-</footer>
+<a href="tel:7754628615" class="call-btn">Call Now</a>
 
 </body>
 </html>

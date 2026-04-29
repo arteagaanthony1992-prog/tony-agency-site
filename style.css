@@ -1,75 +1,117 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
+}
+
+body {
   background: #0a0a0a;
   color: white;
 }
 
+/* HEADER */
 header {
-  background: black;
-  padding: 20px;
+  background: rgba(0,0,0,0.9);
+  padding: 15px;
   text-align: center;
 }
 
-header h1 {
-  color: red;
-  margin: 0;
-}
-
 nav {
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-nav a {
+nav a, .nav-btn {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-section {
-  padding: 40px 20px;
+/* DROPDOWN */
+.dropdown {
+  position: relative;
 }
 
-.inventory {
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #111;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+              url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.car-card {
-  width: 250px;
+.box {
   background: #111;
+  border: 1px solid #333;
+  padding: 20px;
+  width: 250px;
   border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
 }
 
-.car-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.car-card h3, .car-card p {
-  padding: 10px;
-}
-
-.contact {
-  text-align: center;
-}
-
+/* CONTACT */
 input, textarea {
   width: 80%;
   max-width: 400px;
   padding: 10px;
-  margin: 5px 0;
+  margin: 5px;
 }
 
 button {
-  padding: 12px 20px;
+  padding: 10px 20px;
   background: red;
   border: none;
   color: white;
   cursor: pointer;
+}
+
+/* CALL BUTTON */
+.call-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: red;
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
 }
