@@ -33,7 +33,7 @@ nav a, .nav-btn {
   color: white;
   text-decoration: none;
   background: none;
-  border: red;
+  border: none;
   cursor: pointer;
 }
 
