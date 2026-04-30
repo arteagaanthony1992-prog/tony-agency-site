@@ -5,6 +5,11 @@
   font-family: Arial, sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   background: #0a0a0a;
   color: white;
