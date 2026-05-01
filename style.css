@@ -76,9 +76,6 @@ nav a, .nav-btn {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .box {
@@ -86,10 +83,6 @@ nav a, .nav-btn {
   padding: 20px;
   border-radius: 12px;
 
-  /* KEY FIX */
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 
 /* CONTACT */
