@@ -60,8 +60,7 @@ nav a, .nav-btn {
 /* HERO */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgb(21, 2, 105), rgba(21, 2, 105)),
-              url('logo.png');
+  background: url('logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
