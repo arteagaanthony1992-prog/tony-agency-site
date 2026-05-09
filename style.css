@@ -6,7 +6,6 @@
 }
 
 img {
-  background-color: blue;
   max-width: 100%;
   height: auto;
 }
@@ -61,7 +60,7 @@ nav a, .nav-btn {
 /* HERO */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+  background: linear-gradient(rgb(21, 2, 105), rgba(21, 2, 105)),
               url('logo.png');
   background-size: contain;
   background-repeat: no-repeat;
