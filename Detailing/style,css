@@ -17,7 +17,7 @@ body {
 }
 
 .overlay {
-  background: rgba(25, 5, 235, 0.795);
+  background: rgba(0,0,0,0.6);
   padding: 40px;
   border-radius: 10px;
 }
@@ -88,16 +88,4 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bold;
-}
-
-img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 20px;
 }
