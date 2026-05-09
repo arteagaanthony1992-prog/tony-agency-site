@@ -67,8 +67,7 @@ nav a, .nav-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  text-color: blue;
+  text-align: top center;
 }
 
 /* GRID */
