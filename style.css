@@ -63,7 +63,7 @@ nav a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background: blue;
+  background: #111;
 }
 
 .dropdown-content a {
