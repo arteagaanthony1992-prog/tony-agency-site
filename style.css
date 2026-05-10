@@ -97,7 +97,7 @@ nav a:hover {
 
 /* GRID */
 .box {
-  background: #0e045a;
+  background: #141414;
   padding: 25px;
   border-radius: 14px;
   text-align: left;
@@ -109,7 +109,7 @@ nav a:hover {
 }
 
 .box {
-  background: #0e045a;
+  background: #1e1e1e;
   padding: 20px;
   border-radius: 12px;
   display: flex;
