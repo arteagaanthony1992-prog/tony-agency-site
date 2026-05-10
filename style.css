@@ -12,7 +12,7 @@ img {
 
 body {
   background: #0a0a0a;
-  color: rgba(12, 7, 75, 0.712);
+  color: rgba(23, 2, 2, 0.712);
   text-align: center;
 }
 
@@ -68,6 +68,7 @@ nav a, .nav-btn {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-decoration-color: blue;
 
 }
 
