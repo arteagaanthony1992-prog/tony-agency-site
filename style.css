@@ -12,7 +12,7 @@ img {
 
 body {
   background: #0a0a0a;
-  color: white;
+  color: rgba(12, 7, 75, 0.712);
   text-align: center;
 }
 
@@ -122,7 +122,6 @@ button {
 }
 
 /* MOBILE */
-/* MOBILE FIX */
 @media (max-width: 768px) {
 
   header h1 {
