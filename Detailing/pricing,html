@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header Here -->
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">Client<span>Business</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Before & After</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Pricing</h1>
+      <div class="grid">
+        <div class="card">
+          <h3>Basic Package</h3>
+          <div class="price">$99</div>
+          <ul>
+            <li>Core service</li>
+            <li>1–2 hours</li>
+            <li>Great for maintenance</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Premium Package</h3>
+          <div class="price">$199</div>
+          <ul>
+            <li>Deep service</li>
+            <li>Additional upgrades</li>
+            <li>Most popular</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Ultimate Package</h3>
+          <div class="price">$299+</div>
+          <ul>
+            <li>Complete restoration</li>
+            <li>Custom quote</li>
+            <li>Best results</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Client Business. Website by Tony's Digital Solutions.</p>
+    </div>
+</html>

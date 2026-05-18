@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">Client<span>Business</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Before & After</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Customer Testimonials</h1>
+      <div class="grid">
+        <div class="card testimonial">
+          “Outstanding service and fantastic results.”
+          <p><strong>- Sarah M.</strong></p>
+        </div>
+        <div class="card testimonial">
+          “Professional, on time, and worth every penny.”
+          <p><strong>- Mike T.</strong></p>
+        </div>
+        <div class="card testimonial">
+          “I will definitely use them again.”
+          <p><strong>- Jessica R.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Client Business. Website by Tony's Digital Solutions.</p>
+    </div>
+  </footer>
+</body>
+</html>
