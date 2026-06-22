@@ -91,9 +91,9 @@ nav a:hover {
 }
 
 .hero-logo {
-  width: 120px;
-  margin-bottom: 20px;
-  filter: none;
+  width: 250px;
+  max: width 80%;
+  height: auto;
 }
 
 /* GRID */
