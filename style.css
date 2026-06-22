@@ -76,6 +76,13 @@ nav a:hover {
   margin: 0;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 /* DROPDOWN */
 .dropdown {
   position: relative;
