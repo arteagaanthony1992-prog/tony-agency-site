@@ -21,6 +21,7 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.2s ease;
+  text-align: center;
 }
 
 .btn-primary:hover {
@@ -55,7 +56,6 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 12px 30px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
