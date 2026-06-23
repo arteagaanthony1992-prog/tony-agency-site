@@ -107,6 +107,16 @@ img {
   transform: translateY(-2px);
 }
 
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+}
+
 /* ======================
    MOBILE
 ====================== */
