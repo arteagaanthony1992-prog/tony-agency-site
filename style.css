@@ -197,3 +197,181 @@ section {
 
 }
 
+/* ==========================
+   CTA SECTIONS
+========================== */
+
+.cta,
+.portfolio-preview {
+    background:#0f172a;
+    border-radius:30px;
+    margin:40px auto;
+    max-width:1100px;
+    padding:60px 30px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+
+.cta h2,
+.portfolio-preview h2 {
+    margin-bottom:20px;
+}
+
+.cta p,
+.portfolio-preview p {
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+/* ==========================
+   STATS SECTION
+========================== */
+
+.stats {
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+.stat {
+    width:280px;
+    padding:30px;
+    background:#0f172a;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.stat h2 {
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.stat p {
+    color:#cbd5e1;
+}
+
+/* ==========================
+   CONTACT FORM
+========================== */
+
+.contact-form-container {
+    max-width:650px;
+    margin:auto;
+}
+
+.contact-form {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width:100%;
+    padding:15px;
+    background:#0f172a;
+    color:white;
+    border:1px solid #334155;
+    border-radius:12px;
+    font-size:16px;
+}
+
+.contact-form textarea {
+    min-height:160px;
+    resize:vertical;
+}
+
+.contact-form button {
+    border:none;
+    cursor:pointer;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
+    margin-top:50px;
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+
+@media(max-width:768px){
+
+    header {
+        flex-direction:column;
+        padding:20px;
+        text-align:center;
+    }
+
+    .logo-container img {
+        height:45px;
+        max-width:180px;
+
+    }
+
+    nav {
+        margin-top:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    nav a {
+        margin:0;
+        font-size:14px;
+    }
+
+    .hero {
+        min-height:auto;
+        padding:70px 20px;
+    }
+
+    .hero h1 {
+        font-size:36px;
+    }
+
+    .hero p {
+        font-size:16px;
+    }
+
+    .btn {
+        display:block;
+        width:90%;
+        max-width:300px;
+        margin:15px auto;
+    }
+
+    .cards {
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card {
+        width:100%;
+        max-width:350px;
+    }
+
+    section {
+        padding:50px 20px;
+    }
+
+    h2 {
+        font-size:28px;
+    }
+
+    .cta,
+    .portfolio-preview {
+        margin:20px;
+        padding:40px 20px;
+    }
+
+}
