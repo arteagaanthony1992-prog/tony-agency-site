@@ -12,293 +12,463 @@ html {
     scroll-behavior: smooth;
 }
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #222;
-        line-height: 1.6;
-        background: #fff;
-    }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background: #fff;
+}
 
-    a {
-        text-decoration: none;
-    }
+a {
+    text-decoration: none;
+}
 
-    h1,
-    h2,
-    h3 {
-        line-height: 1.2;
-    }
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
 
-    .section {
-        padding: 80px 8%;
-    }
+.section {
+    padding: 70px 8%;
+}
+
 
 /* ==============================
-   HEADER / NAVIGATION
+   HEADER
 ============================== */
 
-    .header {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 
 .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 8%;
-        background: #111;
-        color: white;
-    }
 
-    .logo {
-        font-size: 1.7rem;
-        font-weight: bold;
-    }
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-    .logo span {
-        display: block;
-        font-size: .8rem;
-        color: #d62828;
-        letter-spacing: 2px;
-    }
+    padding:20px 8%;
 
-    .nav-links {
-        display: flex;
-        list-style: none;
-        gap: 30px;
-    }
+    background:#111;
 
-    .nav-links a {
-        color: white;
-        font-weight: bold;
-        transition: .3s;
-    }
+    color:white;
 
-    .nav-links a:hover {
-        color: #d62828;
-    }
+}
 
-    .nav-button {
-        background: #d62828;
-        color:white;
-        padding:12px 25px;
-        border-radius:5px;
-        font-weight:bold;
-    }
+
+.logo {
+
+    font-size:1.7rem;
+    font-weight:bold;
+
+}
+
+
+.logo span {
+
+    display:block;
+    color:#d62828;
+    font-size:.8rem;
+    letter-spacing:2px;
+
+}
+
+
+.nav-links {
+
+    display:flex;
+    list-style:none;
+    gap:25px;
+
+}
+
+
+.nav-links a {
+
+    color:white;
+    font-weight:bold;
+
+}
+
+
+.nav-links a:hover {
+
+    color:#d62828;
+
+}
+
+
+.nav-button {
+
+    background:#d62828;
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+}
+
 
 /* ==============================
    HERO
 ============================== */
 
-    .hero {
-        min-height: 85vh;
-        background:linear-gradient(
-            rgba(0,0,0,.65),
-            rgba(0,0,0,.65)
+
+.hero {
+
+    min-height:85vh;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
     ),
 
-    url("../images/hero.jpg");
-        background-size: cover;
-        background-position:center;
-        display:flex;
-        align-items:center;
-    }
+    url("hero.jpg");
 
-    .hero-overlay {
-        width:100%;
-        padding:80px 8%;
-    }
+    background-size:cover;
 
-    .hero-content {
-        max-width:700px;
-        color:white;
-    }
+    background-position:center;
 
-    .hero h1 {
-        font-size:3.5rem;
-        margin-bottom:25px;
-    }
+    display:flex;
 
-    .hero p {
-        font-size:1.25rem;
-        margin-bottom:35px;
-    }
+    align-items:center;
 
-    .hero-buttons {
-        display:flex;
-        gap:20px;
-    }
+}
 
-    .btn {
-        display:inline-block;
-        padding:15px 30px;
-        border-radius:5px;
-        font-weight:bold;
-    }
 
-    .primary {
-        background:#d62828;
-        color:white;
-    }
+.hero-overlay {
 
-    .secondary {
-        background:white;
-        color:#111;
-    }
+    width:100%;
+
+    padding:80px 8%;
+
+}
+
+
+.hero-content {
+
+    max-width:700px;
+
+    color:white;
+
+}
+
+
+.hero h1 {
+
+    font-size:3.3rem;
+
+    margin-bottom:20px;
+
+}
+
+
+.hero p {
+
+    font-size:1.2rem;
+
+    margin-bottom:30px;
+
+}
+
+
+.hero-buttons {
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+.btn {
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+}
+
+
+.primary {
+
+    background:#d62828;
+
+    color:white;
+
+}
+
+
+.secondary {
+
+    background:white;
+
+    color:#111;
+
+}
+
 
 /* ==============================
    INTRO
 ============================== */
 
-    .intro {
-        text-align:center;
-        max-width:900px;
-        margin:auto;
-    }
 
-    .intro h2,
-    .services h2,
-    .why h2,
-    .reviews h2,
-    .hours h2 {
-        font-size:2.4rem;
-        margin-bottom:20px;
-    }
+.intro {
+
+    text-align:center;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+.intro h2,
+.services h2,
+.why h2,
+.reviews h2,
+.hours h2 {
+
+    font-size:2.3rem;
+
+    margin-bottom:20px;
+
+}
+
 
 /* ==============================
    SERVICES
 ============================== */
 
-    .services {
-        background:#f5f5f5;
-        text-align:center;
-    }
 
-    .service-grid {
-        margin-top:40px;
-        display:grid;
-        grid-template-columns:repeat(4,1fr);
-        gap:25px;
-    }
+.services {
 
-    .service-card {
-        background:white;
-        padding:35px 25px;
-        border-radius:10px;
-        box-shadow: 0 10px 25px rgba(0,0,0,.08);
-    }
+    background:#f5f5f5;
 
-    .service-card h3 {
-        margin-bottom:15px;
-        color:#d62828;
-    }
+    text-align:center;
+
+}
+
+
+.service-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+
+.service-card {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+.service-card h3 {
+
+    color:#d62828;
+
+    margin-bottom:10px;
+
+}
+
 
 /* ==============================
-   WHY CHOOSE US
+   WHY US
 ============================== */
 
-    .why {
-        background:#111;
-        color:white;
-    }
 
-    .why-content {
-        max-width:700px;
-        margin:auto;
-    }
+.why {
 
-    .why li {
-        margin:15px 0;
-        font-size:1.1rem;
-    }
+    background:#111;
+
+    color:white;
+
+}
+
+
+.why-content {
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+.why li {
+
+    margin:15px 0;
+
+}
+
 
 /* ==============================
    REVIEWS
 ============================== */
 
-    .reviews {
+
+.reviews {
+
     text-align:center;
-    }
 
-    .review-grid {
-        display:grid;
-        grid-template-columns:repeat(3,1fr);
-        gap:25px;
-        margin-top:40px;
-    }
+}
 
-    .review-card {
-        background:#f5f5f5;
-        padding:30px;
-        border-radius:10px;
-    }
+
+.review-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.review-card {
+
+    background:#f5f5f5;
+
+    padding:30px;
+
+    border-radius:10px;
+
+}
+
 
 /* ==============================
-   APPOINTMENT CTA
+   APPOINTMENT
 ============================== */
 
-    .appointment-banner {
-        background:#d62828;
-        color:white;
-        text-align:center;
-        padding:70px 8%;
-    }
 
-    .appointment-banner h2 {
-        font-size:2.8rem;
-        margin-bottom:15px;
-    }
+.appointment-banner {
+
+    background:#d62828;
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 8%;
+
+}
+
+
+.appointment-banner h2 {
+
+    font-size:2.5rem;
+
+}
+
 
 /* ==============================
    HOURS
 ============================== */
 
-    .hours {
-        text-align:center;
-    }
+
+.hours {
+
+    text-align:center;
+
+}
+
 
 /* ==============================
    FOOTER
 ============================== */
 
-    .footer {
-        background:#111;
-        color:white;
-        text-align:center;
-        padding:40px 8%;
-    }
+
+.footer {
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
 
 /* ==============================
-   MOBILE RESPONSIVE
+   MOBILE
 ============================== */
 
+
 @media(max-width:900px){
-    .navbar {
-        flex-direction:column;
-        gap:20px;
-    }
 
-    .nav-links {
-        flex-direction:column;
-        text-align:center;
-    }
 
-    .hero h1 {
-        font-size:2.4rem;
-    }
+.navbar {
 
-    .hero-buttons {
-        flex-direction:column;
-    }
+    flex-direction:column;
 
-    .service-grid {
-        grid-template-columns:1fr;
-    }
+    gap:20px;
 
-    .review-grid {
-        grid-template-columns:1fr;
-    }
+}
+
+
+.nav-links {
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+.hero h1 {
+
+    font-size:2.3rem;
+
+}
+
+
+.hero-buttons {
+
+    flex-direction:column;
+
+}
+
+
+.service-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.review-grid {
+
+    grid-template-columns:1fr;
+
+}
 
 }
