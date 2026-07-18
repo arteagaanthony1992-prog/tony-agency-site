@@ -1,6 +1,6 @@
-/* ==========================
-   GLOBAL STYLES
-========================== */
+/* ==============================
+   GLOBAL RESET
+============================== */
 
 * {
     margin: 0;
@@ -8,237 +8,297 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background: #ffffff;
+html {
+    scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #222;
+        line-height: 1.6;
+        background: #fff;
+    }
 
-h1,
-h2,
-h3 {
-    line-height: 1.2;
-}
+    a {
+        text-decoration: none;
+    }
 
-/* ==========================
-   NAVBAR
-========================== */
+    h1,
+    h2,
+    h3 {
+        line-height: 1.2;
+    }
+
+    .section {
+        padding: 80px 8%;
+    }
+
+/* ==============================
+   HEADER / NAVIGATION
+============================== */
+
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background: #222;
-    color: white;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 8%;
+        background: #111;
+        color: white;
+    }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
+    .logo {
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
+    .logo span {
+        display: block;
+        font-size: .8rem;
+        color: #d62828;
+        letter-spacing: 2px;
+    }
 
-.nav-links a {
-    color: white;
-    font-weight: bold;
-}
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
 
-.nav-links a:hover {
-    color: #d62828;
-}
+    .nav-links a {
+        color: white;
+        font-weight: bold;
+        transition: .3s;
+    }
 
-.call-button {
-    background: #d62828;
-    padding: 12px 22px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-}
+    .nav-links a:hover {
+        color: #d62828;
+    }
 
-/* ==========================
+    .nav-button {
+        background: #d62828;
+        color:white;
+        padding:12px 25px;
+        border-radius:5px;
+        font-weight:bold;
+    }
+
+/* ==============================
    HERO
-========================== */
+============================== */
 
-.hero {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    padding: 60px 8%;
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.65),
-        rgba(0,0,0,0.65)
+    .hero {
+        min-height: 85vh;
+        background:linear-gradient(
+            rgba(0,0,0,.65),
+            rgba(0,0,0,.65)
     ),
-    url("hero.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
 
-.hero-content {
-    max-width: 650px;
-}
+    url("../images/hero.jpg");
+        background-size: cover;
+        background-position:center;
+        display:flex;
+        align-items:center;
+    }
 
-.hero h1 {
-    font-size: 3.2rem;
-    margin-bottom: 20px;
-}
+    .hero-overlay {
+        width:100%;
+        padding:80px 8%;
+    }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
+    .hero-content {
+        max-width:700px;
+        color:white;
+    }
 
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-}
+    .hero h1 {
+        font-size:3.5rem;
+        margin-bottom:25px;
+    }
 
-.primary-button,
-.secondary-button {
-    display: inline-block;
-    padding: 14px 28px;
-    border-radius: 5px;
-    font-weight: bold;
-}
+    .hero p {
+        font-size:1.25rem;
+        margin-bottom:35px;
+    }
 
-.primary-button {
-    background: #d62828;
-    color:white;
-}
+    .hero-buttons {
+        display:flex;
+        gap:20px;
+    }
 
-.secondary-button {
-    background:white;
-    color:#222;
-}
+    .btn {
+        display:inline-block;
+        padding:15px 30px;
+        border-radius:5px;
+        font-weight:bold;
+    }
 
-/* ==========================
-   SECTIONS
-========================== */
+    .primary {
+        background:#d62828;
+        color:white;
+    }
 
-section {
-    padding: 70px 8%;
-}
+    .secondary {
+        background:white;
+        color:#111;
+    }
 
-.intro {
-    text-align:center;
-    max-width:900px;
-    margin:auto;
-}
+/* ==============================
+   INTRO
+============================== */
 
-.intro h2,
-.services-preview h2,
-.why-us h2 {
-    font-size:2.2rem;
-    margin-bottom:20px;
-}
+    .intro {
+        text-align:center;
+        max-width:900px;
+        margin:auto;
+    }
 
-/* ==========================
+    .intro h2,
+    .services h2,
+    .why h2,
+    .reviews h2,
+    .hours h2 {
+        font-size:2.4rem;
+        margin-bottom:20px;
+    }
+
+/* ==============================
    SERVICES
-========================== */
+============================== */
 
-.services-preview {
-    background:#f5f5f5;
-}
+    .services {
+        background:#f5f5f5;
+        text-align:center;
+    }
 
-.service-grid {
-    display:grid;
-    grid-template-columns:
-    repeat(4,1fr);
-    gap:25px;
-}
+    .service-grid {
+        margin-top:40px;
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:25px;
+    }
 
-.service-card {
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.1);
-}
+    .service-card {
+        background:white;
+        padding:35px 25px;
+        border-radius:10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    }
 
-.service-card h3 {
-    margin-bottom:10px;
-    color:#222;
-}
+    .service-card h3 {
+        margin-bottom:15px;
+        color:#d62828;
+    }
 
-/* ==========================
-   WHY US
-========================== */
+/* ==============================
+   WHY CHOOSE US
+============================== */
 
-.why-us ul {
-    max-width:600px;
-    margin:auto;
-}
+    .why {
+        background:#111;
+        color:white;
+    }
 
-.why-us li {
-    margin:15px 0;
-    font-size:1.1rem;
-}
+    .why-content {
+        max-width:700px;
+        margin:auto;
+    }
 
-/* ==========================
+    .why li {
+        margin:15px 0;
+        font-size:1.1rem;
+    }
+
+/* ==============================
+   REVIEWS
+============================== */
+
+    .reviews {
+    text-align:center;
+    }
+
+    .review-grid {
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:25px;
+        margin-top:40px;
+    }
+
+    .review-card {
+        background:#f5f5f5;
+        padding:30px;
+        border-radius:10px;
+    }
+
+/* ==============================
    APPOINTMENT CTA
-========================== */
+============================== */
 
-.appointment-banner {
-    background:#222;
-    color:white;
-    text-align:center;
-}
+    .appointment-banner {
+        background:#d62828;
+        color:white;
+        text-align:center;
+        padding:70px 8%;
+    }
 
-.appointment-banner h2 {
-    font-size:2.5rem;
-    margin-bottom:15px;
-}
+    .appointment-banner h2 {
+        font-size:2.8rem;
+        margin-bottom:15px;
+    }
 
-/* ==========================
+/* ==============================
+   HOURS
+============================== */
+
+    .hours {
+        text-align:center;
+    }
+
+/* ==============================
    FOOTER
-========================== */
+============================== */
 
-footer {
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
+    .footer {
+        background:#111;
+        color:white;
+        text-align:center;
+        padding:40px 8%;
+    }
 
-/* ==========================
-   MOBILE
-========================== */
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
 
 @media(max-width:900px){
+    .navbar {
+        flex-direction:column;
+        gap:20px;
+    }
 
-.navbar {
-    flex-direction:column;
-    gap:20px;
-}
+    .nav-links {
+        flex-direction:column;
+        text-align:center;
+    }
 
-.nav-links {
-    flex-direction:column;
-    text-align:center;
-}
+    .hero h1 {
+        font-size:2.4rem;
+    }
 
-.hero h1 {
-    font-size:2.2rem;
-}
+    .hero-buttons {
+        flex-direction:column;
+    }
 
-.hero-buttons {
-    flex-direction:column;
-}
+    .service-grid {
+        grid-template-columns:1fr;
+    }
 
-.service-grid {
-    grid-template-columns:1fr;
-}
+    .review-grid {
+        grid-template-columns:1fr;
+    }
 
 }
