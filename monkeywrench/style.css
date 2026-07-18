@@ -1,470 +1,401 @@
-/* ==============================
-   GLOBAL RESET
-============================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    line-height: 1.6;
-    background: #fff;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3 {
-    line-height: 1.2;
-}
-
-.section {
-    padding: 70px 8%;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 
-/* ==============================
-   HEADER
-============================== */
+body{
 
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+font-family:Arial, Helvetica, sans-serif;
 
+color:#222;
 
-.navbar {
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:20px 8%;
-
-    background:#111;
-
-    color:white;
+line-height:1.6;
 
 }
 
 
-.logo {
 
-    font-size:1.7rem;
-    font-weight:bold;
+a{
 
-}
-
-
-.logo span {
-
-    display:block;
-    color:#d62828;
-    font-size:.8rem;
-    letter-spacing:2px;
+text-decoration:none;
 
 }
 
 
-.nav-links {
 
-    display:flex;
-    list-style:none;
-    gap:25px;
+h1,h2,h3{
 
-}
-
-
-.nav-links a {
-
-    color:white;
-    font-weight:bold;
+line-height:1.2;
 
 }
 
 
-.nav-links a:hover {
-
-    color:#d62828;
-
-}
 
 
-.nav-button {
 
-    background:#d62828;
-    color:white;
+.navbar{
 
-    padding:12px 25px;
+background:#111;
 
-    border-radius:5px;
+color:white;
 
-    font-weight:bold;
+padding:20px 8%;
 
-}
+display:flex;
 
+justify-content:space-between;
 
-/* ==============================
-   HERO
-============================== */
-
-
-.hero {
-
-    min-height:85vh;
-
-    background:
-
-    linear-gradient(
-        rgba(0,0,0,.65),
-        rgba(0,0,0,.65)
-    ),
-
-    url("monkeywrench/hero.jpg");
-
-    background-size:cover;
-
-    background-position:center;
+align-items:center;
 
 }
 
 
-.hero-overlay {
 
-    width:100%;
+.logo{
 
-    padding:80px 8%;
+font-size:1.8rem;
 
-}
-
-
-.hero-content {
-
-    max-width:700px;
-
-    color:white;
+font-weight:bold;
 
 }
 
 
-.hero h1 {
+.logo span{
 
-    font-size:3.3rem;
+display:block;
 
-    margin-bottom:20px;
+font-size:.8rem;
 
-}
+color:#d62828;
 
-
-.hero p {
-
-    font-size:1.2rem;
-
-    margin-bottom:30px;
+letter-spacing:2px;
 
 }
 
 
-.hero-buttons {
 
-    display:flex;
+.nav-links{
 
-    gap:15px;
+display:flex;
 
-}
+gap:30px;
 
-
-.btn {
-
-    display:inline-block;
-
-    padding:14px 30px;
-
-    border-radius:5px;
-
-    font-weight:bold;
+list-style:none;
 
 }
 
 
-.primary {
+.nav-links a{
 
-    background:#d62828;
-
-    color:white;
+color:white;
 
 }
 
 
-.secondary {
 
-    background:white;
+.call-btn{
 
-    color:#111;
+background:#d62828;
 
-}
+color:white;
 
+padding:12px 25px;
 
-/* ==============================
-   INTRO
-============================== */
-
-
-.intro {
-
-    text-align:center;
-
-    max-width:900px;
-
-    margin:auto;
+border-radius:5px;
 
 }
 
 
-.intro h2,
-.services h2,
-.why h2,
-.reviews h2,
-.hours h2 {
 
-    font-size:2.3rem;
 
-    margin-bottom:20px;
+
+.hero{
+
+
+min-height:85vh;
+
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.65)
+),
+
+url("monkeywrench/hero.jpg");
+
+
+
+background-size:cover;
+
+
+background-position:center;
+
+
+display:flex;
+
+align-items:center;
+
+
+padding:8%;
+
+
+color:white;
+
 
 }
 
 
-/* ==============================
-   SERVICES
-============================== */
 
+.hero-content{
 
-.services {
-
-    background:#f5f5f5;
-
-    text-align:center;
+max-width:700px;
 
 }
 
 
-.service-grid {
 
-    display:grid;
+.hero h1{
 
-    grid-template-columns:repeat(4,1fr);
+font-size:3.5rem;
 
-    gap:25px;
-
-    margin-top:40px;
+margin-bottom:20px;
 
 }
 
 
-.service-card {
 
-    background:white;
+.hero p{
 
-    padding:30px;
+font-size:1.2rem;
 
-    border-radius:10px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+margin-bottom:30px;
 
 }
 
 
-.service-card h3 {
-
-    color:#d62828;
-
-    margin-bottom:10px;
-
-}
 
 
-/* ==============================
-   WHY US
-============================== */
 
+.btn{
 
-.why {
+padding:15px 30px;
 
-    background:#111;
+border-radius:5px;
 
-    color:white;
+display:inline-block;
+
+font-weight:bold;
+
+margin-right:10px;
 
 }
 
 
-.why-content {
 
-    max-width:700px;
+.primary{
 
-    margin:auto;
+background:#d62828;
 
-}
-
-
-.why li {
-
-    margin:15px 0;
+color:white;
 
 }
 
 
-/* ==============================
-   REVIEWS
-============================== */
 
+.secondary{
 
-.reviews {
+background:white;
 
-    text-align:center;
+color:#111;
 
 }
 
 
-.review-grid {
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:25px;
-
-}
 
 
-.review-card {
-
-    background:#f5f5f5;
-
-    padding:30px;
-
-    border-radius:10px;
-
-}
 
 
-/* ==============================
-   APPOINTMENT
-============================== */
+.trust{
 
+display:grid;
 
-.appointment-banner {
+grid-template-columns:repeat(4,1fr);
 
-    background:#d62828;
+background:#d62828;
 
-    color:white;
+color:white;
 
-    text-align:center;
+padding:35px 8%;
 
-    padding:70px 8%;
+text-align:center;
 
 }
 
 
-.appointment-banner h2 {
-
-    font-size:2.5rem;
-
-}
 
 
-/* ==============================
-   HOURS
-============================== */
 
+.section{
 
-.hours {
+padding:70px 8%;
 
-    text-align:center;
+text-align:center;
 
 }
 
 
-/* ==============================
-   FOOTER
-============================== */
 
 
-.footer {
+.services{
 
-    background:#111;
+background:#f5f5f5;
 
-    color:white;
+padding:70px 8%;
 
-    text-align:center;
-
-    padding:40px;
+text-align:center;
 
 }
 
 
-/* ==============================
-   MOBILE
-============================== */
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+
+
+.card h3{
+
+color:#d62828;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+.dark{
+
+background:#111;
+
+color:white;
+
+}
+
+
+
+.dark li{
+
+margin:15px;
+
+}
+
+
+
+
+.cta{
+
+background:#d62828;
+
+color:white;
+
+padding:70px 8%;
+
+text-align:center;
+
+}
+
+
+
+
+footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+
+
 
 
 @media(max-width:900px){
 
 
-.navbar {
+.navbar{
 
-    flex-direction:column;
+flex-direction:column;
 
-    gap:20px;
-
-}
-
-
-.nav-links {
-
-    flex-direction:column;
-
-    text-align:center;
+gap:20px;
 
 }
 
 
-.hero h1 {
+.nav-links{
 
-    font-size:2.3rem;
+flex-direction:column;
 
-}
-
-
-.hero-buttons {
-
-    flex-direction:column;
+text-align:center;
 
 }
 
 
-.service-grid {
+.hero h1{
 
-    grid-template-columns:1fr;
+font-size:2.3rem;
 
 }
 
 
-.review-grid {
+.trust{
 
-    grid-template-columns:1fr;
+grid-template-columns:1fr;
 
+}
+
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+body {
+    background: red !important;
 }
 
 }
