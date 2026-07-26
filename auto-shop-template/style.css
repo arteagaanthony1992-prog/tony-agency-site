@@ -400,13 +400,19 @@ a {
 }
 
 .about-page .about-image img {
-
     width: 100%;
-
+    max-width: 500px;
+    height: 400px;
+    object-fit: cover;
     border-radius: 12px;
-
     box-shadow: 0 12px 30px rgba(0,0,0,.15);
+    margin: 0 auto;
+}
 
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-page .about-content h2 {
