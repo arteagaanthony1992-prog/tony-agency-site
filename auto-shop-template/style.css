@@ -349,4 +349,64 @@ a {
     grid-template-columns:1fr;
 }
 
+/* ==========================
+   GLOBAL CONTENT ALIGNMENT FIX
+========================== */
+
+.hero-content,
+.trust-bar,
+.about-preview,
+.services-preview,
+.why-us,
+.reviews,
+.cta,
+.appointment-section {
+    width:100%;
+}
+
+/* Center grids */
+
+.trust-bar,
+.service-cards,
+.features,
+.review-cards {
+    align-items:center;
+}
+
+/* Center text sections */
+
+.section-title,
+.cta,
+.reviews .section-title,
+.why-us .section-title {
+    text-align:center;
+}
+
+/* Make cards centered */
+
+.service-card,
+.feature,
+.review {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* About text alignment */
+
+.about-content {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* Desktop spacing */
+
+@media(min-width:901px){
+
+.about-content {
+    max-width:600px;
+}
+
+}
+
 }
