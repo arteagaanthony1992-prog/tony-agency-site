@@ -421,4 +421,39 @@ a {
     text-align:center;
 }
 
+/* ==========================
+   TRUST BAR FIX
+========================== */
+
+.trust-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding: 40px 8%;
+}
+
+.trust-item {
+    width: 100%;
+    text-align: center;
+}
+
+.trust-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.trust-item p {
+    font-size: 16px;
+}
+
+@media(max-width:900px){
+
+    .trust-bar {
+        grid-template-columns:1fr;
+    }
+}
+
 }
