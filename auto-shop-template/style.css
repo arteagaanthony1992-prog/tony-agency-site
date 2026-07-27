@@ -409,4 +409,32 @@ a {
 
 }
 
+/* ==========================
+   INNER PAGE HERO ALIGNMENT FIX
+========================== */
+
+.page-hero {
+    min-height:45vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.page-hero > div {
+    width:100%;
+    max-width:800px;
+    margin:0 auto;
+}
+
+.page-hero h1 {
+    text-align:center;
+    width:100%;
+}
+
+.page-hero p {
+    text-align:center;
+    width:100%;
+}
+
 }
