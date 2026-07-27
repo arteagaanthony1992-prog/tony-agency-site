@@ -389,4 +389,36 @@ a {
     font-size:36px;
 }
 
+/* ==========================
+   CENTER HOME PAGE SECTIONS
+========================== */
+
+/* Why Choose Us */
+
+.why-us .features {
+    justify-items: center;
+}
+
+.why-us .feature {
+    width:100%;
+    max-width:350px;
+    text-align:center;
+}
+
+/* Reviews */
+
+.reviews {
+    text-align:center;
+}
+
+.review-cards {
+    justify-items:center;
+}
+
+.review {
+    width:100%;
+    max-width:350px;
+    text-align:center;
+}
+
 }
