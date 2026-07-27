@@ -3,29 +3,29 @@
 ========================== */
 
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    color:#222;
-    line-height:1.6;
-    background:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background: #fff;
 }
 
 img {
-    width:100%;
-    display:block;
+    width: 100%;
+    display: block;
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 /* ==========================
@@ -33,42 +33,39 @@ a {
 ========================== */
 
 .navbar {
-
-    background:#111;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:20px 8%;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
 }
 
 .logo h2 {
-    font-size:28px;
-    color:white;
+    color: white;
 }
 
 .logo span {
-    color:#d62828;
-    font-size:13px;
+    color: #d62828;
+    font-size: 13px;
 }
 
 .nav-links {
-    display:flex;
-    gap:30px;
-    list-style:none;
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
 .nav-links a {
-    color:white;
-    font-weight:bold;
+    color: white;
+    font-weight: bold;
 }
 
 .nav-button {
-    background:#d62828;
-    color:white;
-    padding:12px 25px;
-    border-radius:5px;
-    font-weight:bold;
+    background: #d62828;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
 }
 
 /* ==========================
@@ -76,24 +73,24 @@ a {
 ========================== */
 
 .btn {
-    display:inline-block;
-    padding:14px 30px;
-    border-radius:5px;
-    font-weight:bold;
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .primary {
-    background:#d62828;
-    color:white;
+    background: #d62828;
+    color: white;
 }
 
 .secondary {
-    background:white;
-    color:#111;
+    background: white;
+    color: #111;
 }
 
 /* ==========================
-   HERO SECTIONS
+   HERO
 ========================== */
 
 .hero,
@@ -104,48 +101,45 @@ a {
         rgba(0,0,0,.65)
     ),
     url("images/hero.jpg");
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero {
-    min-height:85vh;
+    min-height: 85vh;
 }
 
 .hero-overlay {
-    min-height:85vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-content {
-    width:100%;
-    max-width:850px;
-    padding:20px;
-    color:white;
-    margin:auto;
+    max-width: 850px;
+    padding: 20px;
+    color: white;
+    margin: auto;
 }
 
 .hero-content h1 {
-    font-size:55px;
-    margin-bottom:20px;
-}
 
-.hero-content p {
-    font-size:20px;
-    margin-bottom:30px;
+    font-size: 55px;
+    margin-bottom: 20px;
+
 }
 
 .hero-buttons {
-    display:flex;
-    justify-content:center;
-    gap:15px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .page-hero {
-    min-height:45vh;
+    min-height: 45vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -156,11 +150,15 @@ a {
     max-width:800px;
     color:white;
     padding:20px;
-    margin:auto;
 }
 
-.page-hero h1 {
-    font-size:50px;
+/* ==========================
+   GENERAL SECTIONS
+========================== */
+
+.section-title {
+    text-align:center;
+    margin-bottom:40px;
 }
 
 /* ==========================
@@ -171,10 +169,9 @@ a {
     display:grid;
     grid-template-columns:repeat(4,1fr);
     padding:50px 8%;
-    gap:20px;
-    text-align:center;
     background:#d62828;
     color:white;
+    text-align:center;
 }
 
 .trust-item {
@@ -206,19 +203,6 @@ a {
     border-radius:12px;
 }
 
-.about-content {
-    max-width:600px;
-}
-
-/* ==========================
-   SECTION TITLES
-========================== */
-
-.section-title {
-    text-align:center;
-    margin-bottom:40px;
-}
-
 /* ==========================
    SERVICES
 ========================== */
@@ -226,10 +210,6 @@ a {
 .services-preview,
 .services-page {
     padding:80px 8%;
-}
-
-.services-preview {
-    background:#f5f5f5;
 }
 
 .service-cards {
@@ -240,10 +220,10 @@ a {
 
 .service-card {
     background:white;
+    text-align:center;
     border-radius:10px;
     overflow:hidden;
     box-shadow:0 10px 25px rgba(0,0,0,.12);
-    text-align:center;
 }
 
 .service-card img {
@@ -253,10 +233,6 @@ a {
 
 .card-content {
     padding:25px;
-}
-
-.card-content .btn {
-    margin-top:15px;
 }
 
 /* ==========================
@@ -318,23 +294,15 @@ a {
     margin-bottom:25px;
 }
 
-.form-group label {
-    display:block;
-    margin-bottom:8px;
-    font-weight:bold;
-}
-
 .form-group input,
 .form-group select,
 .form-group textarea {
     width:100%;
     padding:15px;
-    border:1px solid #ccc;
-    border-radius:6px;
 }
 
 /* ==========================
-   CONTACT
+   CONTACT PAGE
 ========================== */
 
 .contact-section {
@@ -415,13 +383,8 @@ a {
 
 .service-cards,
 .features,
-.review-cards,
-.contact-cards {
+.review-cards {
     grid-template-columns:1fr;
-}
-
-.page-hero h1 {
-    font-size:36px;
 }
 
 }
